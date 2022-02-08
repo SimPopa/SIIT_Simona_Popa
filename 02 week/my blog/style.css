@@ -1,0 +1,74 @@
+html{
+    height: 100%;
+}
+
+body {
+    display: flex;
+    box-sizing:border-box;
+    flex-direction:column;
+    height: 100%;
+    margin: 0;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width:100%;
+    height: 100px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+header ul{
+    display:flex;
+    list-style: none;
+
+}
+header ul li {
+    padding: 5px;
+    border: 1px solid black;
+    margin: 3px;
+    background-color: rgba(119, 151, 139, 0.2);
+}
+main {
+    width: 100%;
+    height: 100%;
+}
+main dl {
+    width:80%;
+    margin: 20px;
+    padding:35px;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+    border: 1px double grey;
+    border-radius: 110px;
+    background-color: rgba(112, 102, 92, 0.315);
+    color:aliceblue;
+
+}
+footer {
+    width:100%;
+    height: 80px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.4));
+    text-align: center;
+    color: white;
+}
+.msgform {
+    width:350px;
+    height:fit-content;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding:20px;
+    margin: 30px;
+    background: rgba(255, 255, 255, 0.5);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.msgform h2 {
+    margin:5px;
+}
+#txtmsg {
+    height:200px;
+    width: 300px;
+    margin: 5px 10px;
+}

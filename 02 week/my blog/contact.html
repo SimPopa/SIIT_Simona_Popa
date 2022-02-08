@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html> 
+<html>
     <head>
         <title>Simona's Cows - Contact</title>
-        <link rel="shortcut icon" href="../../../27347657.jpg" type="image/x-icon"/>
+        <link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <meta language="en"/>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <meta name="author" content= "ZanaBuna"/>
+        <meta name="description" content="This blog gives a short description about all types of cows, because we all love them."/>
+        <style>
+            body {
+                background-image: url("CowsBackground.jpg");
+            }
 
+        </style>
     </head>
     <body>
+        <header>
+            <h1>Contact Simona or the herd!</h1>
+            <ul>
+                <li><a href="./home.html" target="_blank">Home</a></li>
+                <li><a href="./contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </header>
+        <main>
+            <div class="msgform">
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname"placeholder="Your First Name"/>
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname" placeholder="Your Last Name"/>
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" placeholder="Your Country of Origin"/>
+            <label for="fcow">What's your favorite cow?</label>
+            <select name="fcow" id="fcow" placeholder="Your Fvavorite Cow">
+                <option value="Highland">Highland</option>
+                <option value="Miniature">Miniature</option>
+                <option value="Red_Angus">Red Angus</option>
+            </select>
+            <h2>Do you want us to call you back?</h2>
+            <div>
+                <label for="positive">Yes</label>
+                <input type="radio" id="positive"/>
+                <label for="negative">No</label>
+                <input type="radio"id="negative"/>
+            </div>
+            <textarea name="txtmsg" id="txtmsg" placeholder="Write something.."></textarea>
+            <input type="submit" value="Send">
+        </div>
+        </main>
+        <footer>
+            <a href="mailto:test@theherd.com" style="color:rgb(204, 247, 204)">Write us your thoughts!</a>
+            <p>&copy 2022-infinity Simona's Herd Inc and affiliates</p>
+        </footer>
     </body>
 </html>
