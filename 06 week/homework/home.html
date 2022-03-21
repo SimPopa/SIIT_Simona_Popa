@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY Javascript Game</title>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <meta language="en"/>
+        <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Mulish &display=swap');
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <h1 style="font-size: 15px;">Robbery - Get away with it!</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">3rd Button</a></li>
+            </ul>
+        </header>
+        <main>
+            <div id="game-rules">
+                <span style="font-weight: bold; text-align: center;">Welcome to the robbery game!</span>
+                <span>The goal is to make your way to the money, and not get caught by police</span>
+                <span>You can move in all four directions, using the arrow keys on your keyboard.</span>
+                <span>There are 5 policemen, hidden randomly across the board. If you encounter one of them, you lose one life.</span>
+                <span>After 3 police encounters, you lose and the game will restart</span>
+                <span>Good Luck!</span>
+                <div id="health-bar">Lives: </div>
+            </div>
+            
+            <div class="game-container" id="gameContainer">
+
+                <div class="player" style="top: 0px; left: 0px; width:50px; height:50px">
+                    <img src="./thief.png" width="50" height="50"/>
+                </div>
+
+                <div class="door" style="top: 350px; left: 350px; width:48px; height:48px">
+                    <img src="./cash2.png" width="48" height="48"/>
+                </div>
+
+            </div>
+        </main>
+
+
+        <footer>
+            <p>Dislcaimer: Players will be disqualified if they do not try to cheat at least 3 times. Never read the fine print.</p>
+        </footer>
+
+        <script src="./game.js"></script>
+    </body>
+</html>
