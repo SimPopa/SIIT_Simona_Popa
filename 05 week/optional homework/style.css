@@ -1,0 +1,183 @@
+* {
+    font-family: Arial;
+    font-size: 16px;
+    color: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0 50px;
+    border: 0;
+    background-image: url("./MeasuringBMI.jpg");
+    background-size:auto;
+}
+.site-title {
+    text-align: center;
+    font-weight: bold;
+    background-image: -webkit-repeating-linear-gradient(right,violet, indigo, blue, green, yellow, orange, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.1em;
+    margin-bottom: 0.6em;
+    padding: 0;
+    
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    color: #289df6;
+    padding-top: 15px;
+    display: block;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.form {
+    background-color: #fff;
+    height: 240px;
+    width: 450px;
+    border-radius: 20px;
+    margin: 20px 100px;
+    display: block;
+    border: solid 1px #00b899;
+
+    box-shadow: 0 0 40px 0 rgb(227, 227, 227);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.form:hover {
+    box-shadow: 0 0 60px 0 #ccc;
+    transition: 0.4s;
+    transform: scale(1.02);
+}
+
+
+
+.text-input {
+    width: 60px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #dbeffe;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+.text-input:hover {
+    background-color: #cbe7fd;
+}
+
+#submit {
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 140px;
+    background-color:  #5acf06;
+    color: #ffffff;
+    margin: auto;
+    display: block;
+    outline: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #1ebf02;
+}
+
+.text {
+    display: inline-block;
+    margin: 5px 20px 5px 8px;
+}
+
+.row-one {
+    padding: 30px 20px 15px;
+}
+.row-two {
+    padding: 15px 20px 30px;
+}
+
+.gender-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.gender-container input {
+    position: absolute;
+    opacity: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #dbeffe;
+    border-radius: 50%;
+}
+
+.gender-container:hover input ~ .checkmark {
+    background-color: #cbe7fd;
+}
+
+.gender-container input:checked ~ .checkmark {
+    background-color: #289df6;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.gender-container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.gender-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.result-container {
+    background-color: #fff;
+    height: 140px;
+    width: 450px;
+    border-radius: 20px;
+    margin: 20px 100px;
+    display: block;
+    border: solid 1px #00b899;
+    padding: 20px;
+
+    box-shadow: 0 0 40px 0 rgb(227, 227, 227);
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.result-container span {
+    margin-left: 5px;
+}

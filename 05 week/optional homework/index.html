@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv='content-language' content='en-us'>
+        <title>BMI Calculator ~ Check Your Body Mass Index </title>
+
+        <link rel="stylesheet" href="./style.css">
+
+
+
+        <body>
+            <h1 class="site-title">Body Mass Index Calculator</h1>
+            <h2>BMI Calculator ~ Check Your Body Mass Index Online</h2>
+            <p>Best calculator to check your body mass index (BMI) within a second. This calculaor can be used to find out your healthy status. By this Calculator you can easily check your Body Mass Index by providing your age, weight and height.</p>
+            <form class="form" id="form" onsubmit="">
+                <div class="row-one">
+                    <input type="text" class="text-input" id="age" autocomplete="off" required/><p class="text">Age</p>
+                    <label class="gender-container">
+                        <input type="radio" name="radio" id="female"><p class="text">Female</p>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="gender-container">
+                        <input type="radio" name="radio" id="male"><p class="text">Male</p>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="row-two">
+                    <input type="text" class="text-input" id="height" autocomplete="off" required><p class="text">Height (cm)</p>
+                    <input type="text" class="text-input" id="weight" autocomplete="off" required><p class="text">Weight (kg)</p>
+                </div>
+                <button type="button" id="submit">Reset</button>
+            </form>
+            
+            <div class="result-container" id="result-container">
+
+                
+            </div>
+
+            <script src="./app.js"></script>
+        </body>
+    </head>
+</html>
